@@ -20,5 +20,3 @@ else:
         print(f"O número {numero} é primo!")
     else:
         print(f"O número {numero} não é primo!")
-
-

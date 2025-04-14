@@ -19,13 +19,3 @@ while vida_usuario or vida_inimigo > 0:
     print(f"=== ROUND {round} ===")
     print(f"Seu HP: {vida_usuario} | Inimigo HP: {vida_inimigo}")
     escolha_usuario = int(input("Seu turno, escolha: \n[1] Atacar \n[2] Curar \n[0] Ir para o menu\n > "))
-
-
-    
-
-
-
-
-
-
-
