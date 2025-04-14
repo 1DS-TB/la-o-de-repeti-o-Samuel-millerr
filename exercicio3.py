@@ -2,6 +2,9 @@
 
 numero = int(input("Insira o número para realizar a tabuada: "))
 
-print(f"\nA tabuada do número {numero} é: ")
-for i in range(10):
-    print(f"{numero} * {i + 1} = {numero * (i+1)}")
+
+if numero >= 1:
+    print(f"\nA tabuada do número {numero} é: ")
+    for i in range(10):
+        print(f"{numero} * {i + 1} = {numero * (i+1)}")
+else: print("INVALIDO")

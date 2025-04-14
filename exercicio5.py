@@ -4,7 +4,6 @@ numero = int(input("Digite um número para verificar se ele é primo: "))
 
 if numero < 1:
     print("INVÁLIDO!")
-
 else:
     if numero == 1:
         primo = False
