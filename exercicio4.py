@@ -10,3 +10,4 @@ else:
         fatorial = fatorial*numero
         numero -= 1
     print(fatorial)
+
