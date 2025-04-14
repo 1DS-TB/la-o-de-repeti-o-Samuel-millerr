@@ -10,4 +10,4 @@ if numero >= 0:
         contador += 1
     print(soma)
 else:
-    print("INVALIDO!")
+    print("INVALIDO")

@@ -3,7 +3,7 @@
 numero = int(input("Insira o número intero e positivo para realizar o calculo do fatorial: "))
 
 if numero < 0:
-    print("INVÁLIDO!")
+    print("INVALIDO")
 else:
     fatorial = 1
     while numero > 1:

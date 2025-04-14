@@ -1,4 +1,4 @@
-# Exercício 10 - Número Kaprekar
+# Exercício 10 - Números Kaprekar
 
 x = int(input("Insira o de onde começara a contagem: "))
 y = int(input("Digite até onde irá a contagem: "))
