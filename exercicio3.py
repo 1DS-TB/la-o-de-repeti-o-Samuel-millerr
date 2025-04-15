@@ -3,7 +3,7 @@
 numero = int(input("Insira o número para realizar a tabuada: "))
 
 
-if numero >= 1:
+if numero >= 0:
     print(f"\nA tabuada do número {numero} é: ")
     for i in range(10):
         print(f"{numero} x {i + 1} = {numero * (i+1)}")
