@@ -4,7 +4,7 @@ limite = int(input("Digite até qual número você gostaria de fazer a série ha
 
 numero = 1
 serie_harmonica = 0
-if limite <= 0 :
+if limite < 0 :
     print("INVALIDO")
 else:
     while numero <= limite:
