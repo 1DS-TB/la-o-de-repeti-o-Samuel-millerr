@@ -25,7 +25,7 @@ for numero in range(x, y):
 
     if numero_calculado == numero:
         kaprekar = True
-        print(numero)
+        print(numero, end=" ")
     else:
         kaprekar = False
 
