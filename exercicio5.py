@@ -17,7 +17,7 @@ else:
                 primo = True
 
     if primo:
-        print(f"O número {numero} é primo!")
+        print(f"{numero} eh primo")
     else:
-        print(f"O número {numero} não é primo!")
+        print(f"{numero} nao eh primo")
 
