@@ -3,6 +3,9 @@
 x = int(input("Insira o de onde começara a contagem: "))
 y = int(input("Digite até onde irá a contagem: "))
 
+if x > y:
+    x, y = y, x
+
 for numero in range(x, y):
     numero_quadrado = str(numero*numero)
     numero_string = str(numero)
