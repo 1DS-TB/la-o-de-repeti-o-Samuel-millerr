@@ -7,8 +7,11 @@ if numero > 0:
     posicao = 0
     while posicao < numero:
         x, fibonacci = x+fibonacci, x
-        print(fibonacci)
+        if fibonacci == 0:
+            print(f"{fibonacci}", end="")
+        else:
+            print(f", {fibonacci}", end="")
         posicao += 1
 else:
     print("INVALIDO")
-# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
