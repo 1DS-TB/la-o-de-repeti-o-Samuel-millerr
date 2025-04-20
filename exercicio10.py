@@ -3,32 +3,33 @@
 x = int(input("Insira o de onde começara a contagem: "))
 y = int(input("Digite até onde irá a contagem: "))
 
-if x > y:
-    x, y = y, x
+if x > y or x < 0 or y < 0:
+    print("INVALIDO")
 
-for numero in range(x, y):
-    numero_quadrado = str(numero*numero)
-    numero_string = str(numero)
-    if numero > 3:
-        if len(numero_quadrado) % 2 != 0:
-            primeira_parte = numero_quadrado[:len(numero_string)-1]
-            segunda_parte = numero_quadrado[len(numero_string)-1:]
+else:
+    for numero in range(x, y):
+        numero_quadrado = str(numero*numero)
+        numero_string = str(numero)
+        if numero > 3:
+            if len(numero_quadrado) % 2 != 0:
+                primeira_parte = numero_quadrado[:len(numero_string)-1]
+                segunda_parte = numero_quadrado[len(numero_string)-1:]
 
-            numero_calculado = int(primeira_parte)+int(segunda_parte)
+                numero_calculado = int(primeira_parte)+int(segunda_parte)
+            else:
+                primeira_parte = numero_quadrado[:len(numero_string)]
+                segunda_parte = numero_quadrado[len(numero_string):]
+
+                numero_calculado = int(primeira_parte)+int(segunda_parte)
         else:
-            primeira_parte = numero_quadrado[:len(numero_string)]
-            segunda_parte = numero_quadrado[len(numero_string):]
+            if numero == 1:
+                numero_calculado = numero
+            else:
+                numero_calculado = numero+1
 
-            numero_calculado = int(primeira_parte)+int(segunda_parte)
-    else:
-        if numero == 1:
-            numero_calculado = numero
+        if numero_calculado == numero:
+            kaprekar = True
+            print(numero, end=" ")
         else:
-            numero_calculado = numero+1
-
-    if numero_calculado == numero:
-        kaprekar = True
-        print(numero, end=" ")
-    else:
-        kaprekar = False
+            kaprekar = False
 
