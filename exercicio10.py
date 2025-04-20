@@ -3,10 +3,15 @@
 x = int(input("Insira o de onde começara a contagem: "))
 y = int(input("Digite até onde irá a contagem: "))
 
-if x > y or x < 0 or y < 0:
+if x > y:
     print("INVALIDO")
 
 else:
+    if x < 0:
+        x = x - x
+    elif y < 0:
+        y = y - y
+
     for numero in range(x, y):
         numero_quadrado = str(numero*numero)
         numero_string = str(numero)
